@@ -1,0 +1,133 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+
+/* NAVBAR (glass + netflix style) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+.navbar h2 {
+    color: #e50914; /* Netflix red */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #e50914;
+}
+
+/* HERO SECTION (Apple style clean glow) */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* BUTTON (premium glow) */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: linear-gradient(90deg, #e50914, #ff4b2b);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(229,9,20,0.3);
+}
+
+.btn:hover {
+    transform: scale(1.08);
+}
+
+/* FEATURES (cards like Netflix tiles) */
+.features {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 25px;
+    width: 220px;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card:hover {
+    transform: scale(1.08);
+    background: #2a2a2a;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    text-align: center;
+    padding: 60px 20px;
+    background: #111;
+}
+
+.testimonial-box p {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: #888;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .feature-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}

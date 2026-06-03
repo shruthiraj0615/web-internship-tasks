@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shruthi Raj Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Hi, I'm Shruthika 👋</h1>
+    <p id="typing"></p>
+    <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<img src="profile.jpg" class="profile-pic" alt="Profile Photo">
+
+<h2 id="about">About Me</h2>
+<p>I am a B.Tech student passionate about Artificial Intelligence and Web Development.
+I enjoy building responsive websites and exploring AI-driven solutions to solve real-world problems.
+</p>
+
+<h2 id="skills">Skills</h2>
+<ul>
+    <li>C</li>
+    <li>Java</li>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>CSS</li>
+ <li>JavaScript</li>
+    <li>SQL</li>
+    <li>Git & GitHub</li>
+</ul>
+
+<h2 id="projects">Projects</h2>
+<ul>
+    <li>
+    <strong>Smart Placement Tracker</strong><br>
+    AI-powered system for tracking student placements and career progress.
+</li>
+
+<li>
+    <strong>Portfolio Website</strong><br>
+    Responsive personal portfolio built using HTML and CSS.
+</li>
+</ul>
+<h2 id="contact">Contact</h2>
+
+<a href="https://www.linkedin.com/in/shruthika-mamilla-b07712413" target="_blank" class="btn">LinkedIn</a>
+
+<a href="https://github.com/shruthiraj0615" target="_blank" class="btn">GitHub</a>
+
+<a href="mailto:yourmail@gmail.com" class="btn">Email Me</a>
+
+<a href="resume.pdf" download class="btn">Download Resume</a>
+<script>
+const text = "Frontend Developer | AI Enthusiast | B.Tech Student";
+let i = 0;
+
+function typeWriter() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 80);
+    }
+}
+
+typeWriter();
+</script>
+</body>
+</html>
