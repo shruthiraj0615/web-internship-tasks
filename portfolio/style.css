@@ -197,3 +197,15 @@ ul li:hover {
     background-color: #16a34a !important;
     color: white !important;
 }
+a.btn.resume-btn {
+    background: #16a34a !important;
+    color: white !important;
+    border: 2px solid #16a34a !important;
+}
+.resume-btn {
+    display: inline-block !important;
+    background: #16a34a !important;
+    color: white !important;
+    padding: 12px 22px !important;
+    border-radius: 8px !important;
+}
