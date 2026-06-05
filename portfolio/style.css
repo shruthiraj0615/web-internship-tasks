@@ -187,3 +187,11 @@ ul li:hover {
 .hero .btn:hover {
     transform: scale(1.08);
 }
+.resume-btn {
+    background-color: #16a34a !important;
+    color: white;
+}
+.hero .btn.resume-btn {
+    background-color: #16a34a !important;
+    color: white !important;
+}
